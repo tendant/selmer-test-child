@@ -1,5 +1,5 @@
 (ns child.core
-  (:gen-class)
+  ;; (:gen-class)
   (:require [selmer.parser :as parser]
             [clojure.java.io :as io]))
 
@@ -7,7 +7,7 @@
 
 (defn output
   []
-  (parser/render-file "demo.html" {}))
+  (parser/render-file "templates/demo.html" {}))
 
 (defn -main
   "I don't do a whole lot ... yet."
