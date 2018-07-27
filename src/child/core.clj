@@ -3,7 +3,7 @@
   (:require [selmer.parser :as parser]
             [clojure.java.io :as io]))
 
-(parser/set-resource-path! (io/resource "templates"))
+(parser/set-resource-path! "templates")
 
 (defn output
   []
